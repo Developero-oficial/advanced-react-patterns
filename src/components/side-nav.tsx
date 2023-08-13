@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+import { navLinks } from "../nav-links";
 
 const NavContainer = styled.div`
   width: 250px;
@@ -9,12 +12,14 @@ const NavContainer = styled.div`
   padding: 20px 0;
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   text-decoration: none;
   color: ${(props) => props.theme.colors.text};
   padding: 10px 20px;
   font-size: 16px;
   transition: background-color 0.3s;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
 
   &:hover {
     background-color: ${(props) => props.theme.backgrounds.quaternary};
@@ -24,10 +29,11 @@ const NavLink = styled.a`
 export const SideNav = () => {
   return (
     <NavContainer>
-      <NavLink href="#home">Home</NavLink>
-      <NavLink href="#about">About</NavLink>
-      <NavLink href="#projects">Projects</NavLink>
-      <NavLink href="#contact">Contact</NavLink>
+      {navLinks.map((navLink) => (
+        <NavLink key={navLink.to} to={navLink.to}>
+          {navLink.label}
+        </NavLink>
+      ))}
     </NavContainer>
   );
 };

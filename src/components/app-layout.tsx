@@ -1,5 +1,5 @@
-import React from "react";
 import styled from "styled-components";
+import { Outlet } from "react-router-dom";
 
 import { SideNav } from "./side-nav";
 
@@ -17,13 +17,11 @@ const MainContent = styled.div`
   overflow-y: auto;
 `;
 
-interface AppLayoutProps {
-  children: React.ReactNode;
-}
-
-export const AppLayout = ({ children }: AppLayoutProps) => (
+export const AppLayout = () => (
   <LayoutContainer>
     <SideNav />
-    <MainContent>{children}</MainContent>
+    <MainContent>
+      <Outlet />
+    </MainContent>
   </LayoutContainer>
 );

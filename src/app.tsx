@@ -1,11 +1,17 @@
 import { ThemeProvider } from "styled-components";
+import "typeface-roboto";
 
-import { synthwaveTheme } from "./synth-wave-theme";
+import { appTheme } from "./app-theme";
+import { AppLayout } from "./components/app-layout";
+import { ResetStyles } from "./components/reset-styles";
 
 function App() {
   return (
-    <ThemeProvider theme={synthwaveTheme}>
-      <h1>Hello</h1>
+    <ThemeProvider theme={appTheme}>
+      <ResetStyles />
+      <AppLayout>
+        <h1>Hello</h1>
+      </AppLayout>
     </ThemeProvider>
   );
 }

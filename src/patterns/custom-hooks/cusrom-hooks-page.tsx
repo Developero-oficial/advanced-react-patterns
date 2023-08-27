@@ -1,6 +1,6 @@
 import { Typography } from "@/components/typography";
-import { TodoItem, TodoItemWithCustomHook } from "./components/todo-item";
 import { Container } from "@/components/container";
+import { TodoItem, TodoItemWithCustomHook } from "./components/todo-item";
 
 export const CustomHooksPage = () => (
   <Container>

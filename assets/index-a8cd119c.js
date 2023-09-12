@@ -74,6 +74,11 @@ Error generating stack: `+l.message+`
   display: flex;
   flex-direction: column;
   padding: 20px 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex: none;
+  }
 `,_0=J(x0)`
   text-decoration: none;
   color: ${e=>e.theme.colors.text};
@@ -91,11 +96,19 @@ Error generating stack: `+l.message+`
   height: 100vh;
   background-color: ${e=>e.theme.backgrounds.primary};
   color: ${e=>e.theme.colors.text};
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `,j0=J.div`
   flex: 1;
   background-color: ${e=>e.theme.backgrounds.quaternary};
   padding: 20px;
   overflow-y: auto;
+
+  @media (max-width: 768px) {
+    flex: none;
+  }
 `,L0=()=>S.jsxs(R0,{children:[S.jsx(N0,{}),S.jsx(j0,{children:S.jsx(f0,{})})]}),z0=J.div`
   display: flex;
   flex-direction: column;

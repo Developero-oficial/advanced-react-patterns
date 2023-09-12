@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import { AppLayout } from "./app-layout";
 import { NotFound } from "./not-found";
@@ -9,7 +9,7 @@ import { ExtensibleStylesPage } from "@/patterns/extensible-styles/extensible-st
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<WelcomePage />} />
@@ -19,6 +19,6 @@ export const AppRouter = () => {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };

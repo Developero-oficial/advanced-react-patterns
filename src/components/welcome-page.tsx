@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from "@/styles/link.styles";
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -42,8 +44,14 @@ export const WelcomePage = () => {
       <Header>¿Cómo aprovechar este curso?</Header>
       <ListContainer>
         <ListItem>
-          Entra a este link para ver el curso en el canal de Youtube de
-          Developero.
+          Entra a{" "}
+          <Link
+            href="https://www.youtube.com/playlist?list=PLkr7dGY4D2sOyjBKXyNhtkIwO3suaqotD"
+            target="_blank"
+          >
+            este link
+          </Link>
+          {` `} para ver el curso en el canal de Youtube de Developero.
         </ListItem>
         <ListItem>
           Revisa la explicación de los patrones que te interesen.
@@ -53,8 +61,13 @@ export const WelcomePage = () => {
           /src/patterns.
         </ListItem>
         <ListItem>
-          Suscríbete al canal de Youtube de Developero para recibir más cursos
-          gratuitos <span role="img">⚛️</span>.
+          <Link
+            href="https://www.youtube.com/c/developero?sub_confirmation=1"
+            target="_blank"
+          >
+            Suscríbete al canal de Youtube de Developero
+          </Link>{" "}
+          para recibir más cursos gratuitos <span role="img">⚛️</span>.
         </ListItem>
       </ListContainer>
     </Container>

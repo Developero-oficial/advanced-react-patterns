@@ -8,6 +8,10 @@ const LayoutContainer = styled.div`
   height: 100vh;
   background-color: ${(props) => props.theme.backgrounds.primary};
   color: ${(props) => props.theme.colors.text};
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const MainContent = styled.div`
@@ -15,6 +19,10 @@ const MainContent = styled.div`
   background-color: ${(props) => props.theme.backgrounds.quaternary};
   padding: 20px;
   overflow-y: auto;
+
+  @media (max-width: 768px) {
+    flex: none;
+  }
 `;
 
 export const AppLayout = () => (

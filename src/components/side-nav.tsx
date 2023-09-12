@@ -10,6 +10,11 @@ const NavContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex: none;
+  }
 `;
 
 const NavLink = styled(Link)`

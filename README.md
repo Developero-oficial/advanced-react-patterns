@@ -1,27 +1,82 @@
-# React + TypeScript + Vite
+# Curso Patrones Avanzados React JS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+## 📖 Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este repositorio contiene el código fuente para el Curso de Patrones Avanzados en React JS del canal de Developero.
 
-## Expanding the ESLint configuration
+Aprenderás diferentes patrones y buenas prácticas para mejorar tus habilidades en React y crear aplicaciones más robustas, escalables y mantenibles.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📚 Temas Cubiertos
 
-- Configure the top-level `parserOptions` property like this:
+A continuación se muestra la lista de patrones que se cubrirán en el curso:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- [x] Custom Hooks
+- [x] High Order Components (HOC)
+- [x] Extensible Styles
+- [ ] Compound Components
+- [ ] Advanced Compound Components
+- [ ] Render Props
+- [ ] Control Props
+- [ ] Props Getters
+- [ ] State Initializer
+- [ ] State Reducer
+
+## 🛠️ Requisitos Previos
+
+Es recomendable tener conocimientos básicos en:
+
+- JavaScript ES6+
+- React JS
+
+## 🚀 Cómo empezar
+
+### Instalación
+
+Clona el repositorio y accede a la carpeta del proyecto:
+
+```bash
+git clone git@github.com:Developero-oficial/advanced-react-patterns.git
+cd advanced-react-patterns
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+ó
+
+```bash
+yarn install
+```
+
+### Ejecución
+
+Para iniciar el proyecto en modo desarrollo, ejecuta:
+
+```bash
+npm run dev
+```
+
+ó
+
+```bash
+yarn dev
+```
+
+Abre tu navegador y visita `http://localhost:5174/advanced-react-patterns/`.
+
+## 📺 YouTube
+
+No olvides visitar y suscribirte al [canal de YouTube](https://www.youtube.com/c/developero) donde encontrarás los videos explicativos de cada patrón.
+
+## 🤝 Contribuciones
+
+Las contribuciones son siempre bienvenidas.
+
+## 🙏 Agradecimientos
+
+Agradezco a todos los que me han apoyado con mensajes de agradecimiento y que no paran de aprender y compartir conocimiento.

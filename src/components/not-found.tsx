@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from "@/styles/link.styles";
+
 const NotFoundWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -25,11 +27,15 @@ const Message = styled.div`
 export const NotFound = () => {
   return (
     <NotFoundWrapper>
-      <ErrorCode>404</ErrorCode>
+      <ErrorCode>Clase en progreso</ErrorCode>
       <Message>
-        ¡Ups! Parece que esta página no existe o ha sido movida.
+        Esta clase aún no está disponible
         <br />
-        Por favor, comprueba la URL o vuelve a la página de inicio.
+        No hay un calendario fijo para la publicación de las clases, pero voy
+        publicando en el{" "}
+        <Link href="https://www.youtube.com/c/developero" target="_blank">
+          canal de Developero
+        </Link>
       </Message>
     </NotFoundWrapper>
   );

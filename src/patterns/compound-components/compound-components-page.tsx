@@ -5,6 +5,7 @@ import { ListContainer, ListTitle, ListItem } from "@/components/list";
 
 import { UserProfile } from "./components/user-profile/user-profile";
 import { UserInfo } from "./components/user-profile/user-info";
+import { Link } from "@/styles/link.styles";
 
 interface UserListDataProps {
   data: string[];
@@ -32,8 +33,17 @@ const mockUserFavoriteMovies = ["Inception", "The Matrix"];
 export const CompoundComponentsPage = () => (
   <Container>
     <Typography variant="title">Compound Components</Typography>
-    <Typography variant="header">Ejemplo sin compound components</Typography>
+    <Typography>
+      Accede a la lección de Custom Hook dando{" "}
+      <Link
+        href="https://www.youtube.com/watch?v=kEq36QY3PUM&list=PLkr7dGY4D2sOyjBKXyNhtkIwO3suaqotD&index=6&ab_channel=Developero"
+        target="_blank"
+      >
+        click aquí.
+      </Link>
+    </Typography>
 
+    <Typography variant="header">Ejemplo sin compound components</Typography>
     <Container maxWidth="250px">
       <UserProfile
         user={mockUserData}

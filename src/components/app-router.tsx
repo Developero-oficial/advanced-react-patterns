@@ -7,6 +7,7 @@ import { CustomHooksPage } from "@/patterns/custom-hooks/cusrom-hooks-page";
 import { HocPage } from "@/patterns/hoc/hoc-page";
 import { ExtensibleStylesPage } from "@/patterns/extensible-styles/extensible-styles-page";
 import { CompoundComponentsPage } from "@/patterns/compound-components/compound-components-page";
+import { AdvancedCompoundComponentsPage } from "@/patterns/advanced-compound-components/advanced-compound-components-page";
 
 export const AppRouter = () => {
   return (
@@ -20,6 +21,10 @@ export const AppRouter = () => {
           <Route
             path="/compound-components"
             element={<CompoundComponentsPage />}
+          />
+          <Route
+            path="/advanced-compound-components"
+            element={<AdvancedCompoundComponentsPage />}
           />
           <Route path="*" element={<NotFound />} />
         </Route>

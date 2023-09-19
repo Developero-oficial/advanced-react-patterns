@@ -8,6 +8,7 @@ import { HocPage } from "@/patterns/hoc/hoc-page";
 import { ExtensibleStylesPage } from "@/patterns/extensible-styles/extensible-styles-page";
 import { CompoundComponentsPage } from "@/patterns/compound-components/compound-components-page";
 import { AdvancedCompoundComponentsPage } from "@/patterns/advanced-compound-components/advanced-compound-components-page";
+import { RenderPropsPage } from "@/patterns/render-props/render-props-page";
 
 export const AppRouter = () => {
   return (
@@ -26,6 +27,7 @@ export const AppRouter = () => {
             path="/advanced-compound-components"
             element={<AdvancedCompoundComponentsPage />}
           />
+          <Route path="/render-props" element={<RenderPropsPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

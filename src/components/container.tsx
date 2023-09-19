@@ -4,7 +4,11 @@ interface ContainerProps {
   maxWidth?: string;
 }
 
-export const Container = styled.div<ContainerProps>`
+export const Container = styled.div
+  .attrs<ContainerProps>(() => ({}))
+  .withConfig({
+    shouldForwardProp: (prop) => !["maxWidth"].includes(prop),
+  })<ContainerProps>`
   display: flex;
   flex-direction: column;
   gap: 40px;

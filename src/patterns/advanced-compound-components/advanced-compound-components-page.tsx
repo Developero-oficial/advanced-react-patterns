@@ -1,4 +1,5 @@
 import { Typography } from "@/components/typography";
+import { Link } from "@/styles/link.styles";
 import { Container } from "@/components/container";
 import { TabList } from "@/components/tab";
 
@@ -15,6 +16,17 @@ const tabs = [
 export const AdvancedCompoundComponentsPage = () => (
   <Container>
     <Typography variant="title">Advanced Compound Components</Typography>
+
+    <Typography>
+      Accede a la lección de Custom Hook dando{" "}
+      <Link
+        href="https://www.youtube.com/watch?v=KkRK4TCMiec&list=PLkr7dGY4D2sOyjBKXyNhtkIwO3suaqotD&index=7&ab_channel=Developero"
+        target="_blank"
+      >
+        click aquí.
+      </Link>
+    </Typography>
+
     <Typography variant="header">
       Ejemplo sin Advanced Compund Components
     </Typography>

@@ -9,6 +9,7 @@ import { ExtensibleStylesPage } from "@/patterns/extensible-styles/extensible-st
 import { CompoundComponentsPage } from "@/patterns/compound-components/compound-components-page";
 import { AdvancedCompoundComponentsPage } from "@/patterns/advanced-compound-components/advanced-compound-components-page";
 import { RenderPropsPage } from "@/patterns/render-props/render-props-page";
+import { ControlPropsPage } from "@/patterns/control-props/control-props-page";
 
 export const AppRouter = () => {
   return (
@@ -28,6 +29,7 @@ export const AppRouter = () => {
             element={<AdvancedCompoundComponentsPage />}
           />
           <Route path="/render-props" element={<RenderPropsPage />} />
+          <Route path="/control-props" element={<ControlPropsPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

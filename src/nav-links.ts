@@ -33,7 +33,7 @@ export const navLinks: NavLink[] = [
     label: "Render Props",
   },
   {
-    to: "/coltrol-props",
+    to: "/control-props",
     label: "Control Props",
   },
   {

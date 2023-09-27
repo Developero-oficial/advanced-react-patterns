@@ -11,6 +11,7 @@ import { AdvancedCompoundComponentsPage } from "@/patterns/advanced-compound-com
 import { RenderPropsPage } from "@/patterns/render-props/render-props-page";
 import { ControlPropsPage } from "@/patterns/control-props/control-props-page";
 import { PropsGettersPage } from "@/patterns/props-getters/props-getters-page";
+import { StateInitializerPage } from "@/patterns/state-initializer/state-initializer-page";
 
 export const AppRouter = () => {
   return (
@@ -32,6 +33,7 @@ export const AppRouter = () => {
           <Route path="/render-props" element={<RenderPropsPage />} />
           <Route path="/control-props" element={<ControlPropsPage />} />
           <Route path="/props-getters" element={<PropsGettersPage />} />
+          <Route path="/state-initializer" element={<StateInitializerPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
